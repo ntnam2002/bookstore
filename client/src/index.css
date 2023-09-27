@@ -1,0 +1,45 @@
+:root{
+  --main-color: #efefef;
+  --primary-color: #51a805;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+ul {
+  list-style: none;
+}
+
+input.focus {
+  outline: none;
+}
+
+
+.btn{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.update-btn{
+  background-color: var(--primary-color);
+}
+
+.delete-btn{
+  background-color: red;
+}

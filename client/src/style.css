@@ -1,0 +1,189 @@
+.App{
+    /* height: 100vh; */
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.books{
+    display: flex;
+    gap: 10px;
+}
+
+.book{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: aquamarine;
+}
+
+.delete{
+    border: none;
+    padding: 3px 6px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: red;
+}
+.update{
+    border: none;
+    padding: 3px 6px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: blue;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    border: 2px solid teal;
+    padding: 10px;
+    font-size: 21px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+select {
+    width: 100%;
+    height: 55px;
+    border: 2px solid teal;
+    padding: 10px;
+    font-size: 21px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.formButton {
+    /* width: 10%; */
+    align-items: right;
+    background-color: rgb(10, 180, 10);
+    color: white;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.update a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn{
+    width: 10%;
+    align-items: right;
+    background-color: rgb(85, 210, 35);
+    color: white;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+table th {
+    background-color: #ff9800;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+    
+table tr:hover td {
+    background-color: #ffedcc;
+}
+
+table td {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow:  0 0 1px gray;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.navbar-link {
+    padding: 0 20px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #525452;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    background-color: rgb(201, 235, 8);
+}
+
+.listbook{
+    width: 100%;
+}
+
+.listbook h1 {
+    margin-bottom: 20px;
+}
