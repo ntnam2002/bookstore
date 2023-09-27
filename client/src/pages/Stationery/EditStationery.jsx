@@ -16,7 +16,7 @@ const EditStationery = () => {
     useEffect(() => {
       const fetchSuppliers = async () => {
         try {
-          const response = await axios.get("http://localhost:8080/supplier"); 
+          const response = await axios.get("http://192.168.243.80:8080/supplier"); 
           setSuppliers(response.data);
         } catch (error) {
           console.log(error);
@@ -37,7 +37,7 @@ const EditStationery = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:8080/stationery/${sID}`, book)
+            await axios.put(`http://192.168.243.80:8080/stationery/${sID}`, book)
             navigate("/stationery")
         } catch (error) {
            console.log(error) 

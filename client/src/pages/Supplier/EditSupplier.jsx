@@ -22,7 +22,7 @@ const EditSupplier = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:8080/supplier/${supplierID}`, book)
+            await axios.put(`http://10.40.27.192:8080/supplier/${supplierID}`, book)
             navigate("/supplier")
         } catch (error) {
            console.log(error) 

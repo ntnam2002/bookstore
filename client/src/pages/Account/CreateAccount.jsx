@@ -20,7 +20,7 @@ const CreateAccount = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.post("http://localhost:8080/account", book)
+            await axios.post("http://192.168.243.80:8080/account", book)
             navigate("/account")
         } catch (error) {
            console.log(error) 

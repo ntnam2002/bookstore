@@ -8,8 +8,8 @@ const ListAccount = () => {
     useEffect(()=>{
         const fetchAllBooks = async () => {
             try {
-                // const res = await axios.get("http://localhost:8888/account")
-                const res = await axios.get("http://localhost:8080/account")
+                // const res = await axios.get("http://192.168.243.80:8888/account")
+                const res = await axios.get("http://192.168.243.80:8080/account")
                 //cổng 8080
                 setBooks(res.data);
             } catch (err) {
@@ -21,7 +21,7 @@ const ListAccount = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete("http://localhost:8080/account/"+id)
+            await axios.delete("http://192.168.243.80:8080/account/"+id)
             window.location.reload();
         } catch (error) {
             console.log(error)

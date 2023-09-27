@@ -8,7 +8,7 @@ const ListStationery = () => {
     useEffect(()=>{
         const fetchAllBooks = async () => {
             try {
-                const res = await axios.get("http://localhost:8080/stationery")
+                const res = await axios.get("http://192.168.243.80:8080/stationery")
                 setBooks(res.data);
             } catch (err) {
                 console.log(err)
@@ -19,7 +19,7 @@ const ListStationery = () => {
 
     const handleDelete = async (sID) => {
         try {
-            await axios.delete("http://localhost:8080/stationery/"+sID)
+            await axios.delete("http://192.168.243.80:8080/stationery/"+sID)
             window.location.reload();
         } catch (error) {
             console.log(error)

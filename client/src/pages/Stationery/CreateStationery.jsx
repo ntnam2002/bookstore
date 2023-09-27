@@ -18,7 +18,7 @@ const CreateStationery = () => {
     useEffect(() => {
       const fetchSuppliers = async () => {
         try {
-          const response = await axios.get("http://localhost:8080/supplier"); // Thay đổi URL API để lấy dữ liệu nhà cung cấp
+          const response = await axios.get("http://192.168.243.80:8080/supplier"); // Thay đổi URL API để lấy dữ liệu nhà cung cấp
           setSuppliers(response.data);
         } catch (error) {
           console.log(error);
@@ -36,7 +36,7 @@ const CreateStationery = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.post("http://localhost:8080/stationery", book)
+            await axios.post("http://192.168.243.80:8080/stationery", book)
             navigate("/stationery")
         } catch (error) {
            console.log(error) 

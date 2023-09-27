@@ -18,7 +18,7 @@ const EditBook = () => {
     useEffect(() => {
       const fetchSuppliers = async () => {
         try {
-          const response = await axios.get("http://localhost:8080/supplier"); 
+          const response = await axios.get("http://192.168.243.80:8080/supplier"); 
           setSuppliers(response.data);
         } catch (error) {
           console.log(error);
@@ -39,7 +39,7 @@ const EditBook = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:8080/books/${bookId}`, book)
+            await axios.put(`http://192.168.243.80:8080/books/${bookId}`, book)
             navigate("/books")
         } catch (error) {
            console.log(error) 

@@ -9,7 +9,7 @@ const ListSupplier = () => {
     useEffect(()=>{
         const fetchAllBooks = async () => {
             try {
-                const res = await axios.get("http://localhost:8080/supplier")
+                const res = await axios.get("http://10.40.27.192:8080/supplier")
                 setBooks(res.data);
             } catch (err) {
                 console.log(err)
@@ -20,7 +20,7 @@ const ListSupplier = () => {
 
     const handleDelete = async (supplierID) => {
         try {
-            await axios.delete("http://localhost:8080/supplier/"+supplierID)
+            await axios.delete("http://10.40.27.192:8080/supplier/"+supplierID)
             window.location.reload();
         } catch (error) {
             console.log(error)

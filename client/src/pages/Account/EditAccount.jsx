@@ -22,7 +22,7 @@ const EditAccount = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:8080/account/${id}`, book)
+            await axios.put(`http://192.168.243.80:8080/account/${id}`, book)
             navigate("/account")
         } catch (error) {
            console.log(error) 

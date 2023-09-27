@@ -20,7 +20,7 @@ const CreateSupplier = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.post("http://localhost:8080/supplier", book)
+            await axios.post("http://10.40.27.192:8080/supplier", book)
             navigate("/supplier")
         } catch (error) {
            console.log(error) 

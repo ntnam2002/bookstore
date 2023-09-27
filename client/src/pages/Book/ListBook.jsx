@@ -10,8 +10,10 @@ const ListBook = () => {
     useEffect(()=>{
         const fetchAllBooks = async () => {
             try {
-                const res = await axios.get("http://localhost:8080/books")
-                setBooks(res.data);
+                const res = await axios.get("http://192.168.243.80:8080/books")
+                const singleObject = res.data; // Assuming the response is a single JSON object
+                const bookArray = [singleObject]; // Transform it into an array
+                setBooks(bookArray);
             } catch (err) {
                 console.log(err)
             }
@@ -21,7 +23,7 @@ const ListBook = () => {
 
     const handleDelete = async (bookID) => {
         try {
-            await axios.delete("http://localhost:8080/books/"+bookID)
+            await axios.delete("http://192.168.243.80:8080/books/"+bookID)
             window.location.reload();
         } catch (error) {
             console.log(error)
