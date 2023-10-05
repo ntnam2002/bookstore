@@ -9,7 +9,7 @@ const ListAccount = () => {
         const fetchAllBooks = async () => {
             try {
                 // const res = await axios.get("http://192.168.243.80:8888/account")
-                const res = await axios.get("http://192.168.243.80:8080/account")
+                const res = await axios.get("http://192.168.1.11:8080/account")
                 //cổng 8080
                 setBooks(res.data);
             } catch (err) {
@@ -21,7 +21,7 @@ const ListAccount = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete("http://192.168.243.80:8080/account/"+id)
+            await axios.delete("http://192.168.1.11:8080/account/"+id)
             window.location.reload();
         } catch (error) {
             console.log(error)
@@ -32,7 +32,7 @@ const ListAccount = () => {
     <div className='listbook'>
         <h1>Tài khoản</h1>
         <div>
-          <Link to="/CreateAccount" className='btn'>Thêm sách mới</Link>
+          <Link to="/CreateAccount" className='btn'>Thêm Account mới</Link>
         </div>
         <div className="books">
         <table className='managerBook-table'>
@@ -41,7 +41,7 @@ const ListAccount = () => {
               <th>id</th>
               <th>Account</th>
               <th>Password</th>
-              <th>role</th>
+              <th>Role</th>
               <th></th>
               <th></th>
             </tr>

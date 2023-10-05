@@ -65,7 +65,7 @@ const CreateBook = () => {
 
         <input onChange={handleChange} type="text" placeholder='quantityInStock' name='quantityInStock'/>
         <input onChange={handleChange} type="number" placeholder='price' name='price'/>
-        <button className='formButton' onClick={handleClick}>add</button>
+        <button className='formButton' onClick={handleClick}>Add</button>
     </div>
   )
 }

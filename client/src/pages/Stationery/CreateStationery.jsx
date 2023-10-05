@@ -46,7 +46,7 @@ const CreateStationery = () => {
     console.log(book)
   return (
     <div className='form'>
-        <h1>Addd boook</h1>
+        <h1>Add Stationery</h1>
         <input onChange={handleChange} type="text" placeholder='img' name='img'/>
         <input onChange={handleChange} type="text" placeholder='name' name='name'/>
         {/* <label>Chọn ID nhà cung cấp</label> */}
@@ -61,7 +61,7 @@ const CreateStationery = () => {
 
         <input onChange={handleChange} type="text" placeholder='quantityInStock' name='quantityInStock'/>
         <input onChange={handleChange} type="number" placeholder='price' name='price'/>
-        <button className='formButton' onClick={handleClick}>add</button>
+        <button className='formButton' onClick={handleClick}>Add</button>
     </div>
   )
 }

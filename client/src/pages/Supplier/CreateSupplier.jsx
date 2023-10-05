@@ -35,7 +35,7 @@ const CreateSupplier = () => {
         <input onChange={handleChange} type="text" placeholder='supplierName' name='supplierName'/>
         <input onChange={handleChange} type="text" placeholder='address' name='address'/>
         <input onChange={handleChange} type="text" placeholder='type' name='type'/>
-        <button className='formButton' onClick={handleClick}>add</button>
+        <button className='formButton' onClick={handleClick}>Add</button>
     </div>
   )
 }

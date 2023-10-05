@@ -20,7 +20,7 @@ const CreateAccount = () => {
     const handleClick = async (e) =>{
         e.preventDefault();
         try {
-            await axios.post("http://192.168.243.80:8080/account", book)
+            await axios.post("http://192.168.1.11:8080/account", book)
             navigate("/account")
         } catch (error) {
            console.log(error) 
@@ -30,12 +30,12 @@ const CreateAccount = () => {
     console.log(book)
   return (
     <div className='form'>
-        <h1>Addd boook</h1>
+        <h1>Add Account</h1>
         <input onChange={handleChange} type="text" placeholder='id' name='id'/>
         <input onChange={handleChange} type="text" placeholder='username' name='username'/>
         <input onChange={handleChange} type="text" placeholder='password' name='password'/>
         <input onChange={handleChange} type="text" placeholder='role' name='role'/>
-        <button className='formButton' onClick={handleClick}>add</button>
+        <button className='formButton' onClick={handleClick}>Add</button>
     </div>
   )
 }

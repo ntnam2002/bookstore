@@ -35,7 +35,7 @@ const ListStationery = () => {
     <div className='listbook'>
         <h1>Văn phòng phảm Stationnery</h1>
         <div>
-          <Link to="/CreateStationery" className='btn'>Thêm sách mới</Link>
+          <Link to="/CreateStationery" className='btn'>Thêm Stationary mới</Link>
         </div>
         <div className="books">
         <table className='managerBook-table'>
